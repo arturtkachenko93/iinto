@@ -1,4 +1,4 @@
-# ТЗ «iinto»
+# «iinto»
 Разработка веб-интерфейса
 
 html5/css3/scss/gulp4/npm/webp/svg
@@ -8,7 +8,7 @@ adaptive:
   - tablet width - 768px;
   - desktop width - 1100px
 
-## Открыть [Demo](https://arturtkachenko93.github.io/mishka/)
+## Открыть [Demo](arturtkachenko93.github.io/iinto//)
 
 ## Установка локально
 Перед запуском необходимо установить следующие компоненты:
