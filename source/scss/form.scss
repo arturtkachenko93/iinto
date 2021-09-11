@@ -1,0 +1,261 @@
+.form {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.form__contacts {
+  margin-bottom: 30px;
+}
+.form__contacts-list {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+.form__contacts-item {
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 50%;
+
+    &:not(:last-child) {
+      margin-right: 10%;
+    }
+  }
+}
+.form__contacts-label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $line;
+  z-index: 1;
+}
+
+.form__contacts-input {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: $fontcolor;
+  border: 2px solid $border;
+  padding: 30px 12px 10px 12px;
+
+  &::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    color: $fontcolor;
+  }
+
+  &:focus {
+    border-left: 2px solid $active;
+  }
+}
+
+.form__type {
+  margin-bottom: 30px;
+}
+
+.form__type-slogan {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form__type-intro {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.form__type-list {
+  font-size: 17px;
+  font-weight: 500;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.form__type-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+.form__type-input {
+  position: absolute;
+  appearance: none;
+}
+
+.form__type-input:checked + .form__type-radio {
+  border: 2px $active solid;
+}
+
+.form__type-label {
+  padding-left: 2em;
+
+  @media (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.form__type-radio {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: 2px $line solid;
+  border-radius: 50%;
+  margin-left: -2em;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+  @media (any-hover: hover) {
+    &:hover {
+        border: 2px $active solid;
+      }
+    }
+}
+
+.form__type-i {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $border;
+  border-radius: 50%;
+  font-size: 13px;
+  color: $line;
+  padding-left: 4px;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+
+  @media (any-hover: hover) {
+    
+  &:hover ~ .form__type-popup {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.form__type-popup {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 230px;
+  min-height: 70px;
+  transform: translate(0, 30px);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: $hover;
+  box-shadow: 5px 2px 23px 0px rgba(78, 50, 255, 0.66);
+  padding: 10px 20px;
+
+  &--left {
+    transform: translate(-100px, 30px);
+  }
+}
+
+.form__terms {
+  margin-bottom: 40px;
+}
+
+.form__terms-input {
+  &:focus {
+    outline: 2px $fb solid;
+  }
+}
+
+.form__terms-checkbox {
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px $line solid;
+  margin-left: -2em;
+  top: 0;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 2px $active solid;
+    }
+  }
+
+
+  &:focus {
+    outline: 2px $fb solid;
+  }
+}
+
+.form__terms-label {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 2em;
+}
+
+.form__terms-input:checked + .form__terms-checkbox {
+  width: 1.2em;
+  height: 1.2em;
+  background-color: $active;
+}
+
+.form__terms-link {
+  color: $active;
+  text-decoration: underline;
+}
+
+.form__btn-submit {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $active;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 10px;
+  transition: all 0.3s ease;
+
+  @media (min-width: $desktop) {
+    width: 50%;
+    padding: 15px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $hover;
+      color: $fontcolor;
+    }
+  }
+}
+
+input:hover::-webkit-input-placeholder {
+  color:transparent;
+  transition: ease 0.3s;
+}
