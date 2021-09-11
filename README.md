@@ -8,7 +8,7 @@ adaptive:
   - tablet width - 768px;
   - desktop width - 1100px
 
-## Открыть [Demo](arturtkachenko93.github.io/iinto/)
+## Открыть [Demo](http://arturtkachenko93.github.io/iinto/)
 
 ## Установка локально
 Перед запуском необходимо установить следующие компоненты:
