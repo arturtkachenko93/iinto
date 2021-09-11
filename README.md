@@ -1,7 +1,12 @@
 # ТЗ «iinto»
 Разработка веб-интерфейса
 
-html5/css3/scss/gulp4/npm
+html5/css3/scss/gulp4/npm/webp/svg
+
+adaptive:
+  - mobile width - 320px;
+  - tablet width - 768px;
+  - desktop width - 1100px
 
 ## Открыть [Demo](https://arturtkachenko93.github.io/mishka/)
 
